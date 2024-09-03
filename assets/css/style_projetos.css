@@ -1,0 +1,63 @@
+/* Banner do Projeto */
+.banner-project {
+    position: relative;
+    height: 35vh;
+    width: 100%;
+    background: url('../images/portifolio-6.jpg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-project .banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Cards de Projetos */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-img-top{
+    padding-top: 0;
+    max-height: 50vh;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+
+.card-text {
+    text-align: center  ;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Modal de Detalhes do Projeto */
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#modalCarousel .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+#modalDescription {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner-project {
+        height: 200px;
+    }
+
+    #modalCarousel .carousel-inner img {
+        height: 300px;
+    }
+}

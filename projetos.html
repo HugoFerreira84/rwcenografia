@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Projeto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="assets/css/style_projetos.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Cenografia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner do Projeto -->
+    <section class="banner-project d-flex align-items-center justify-content-center">
+        <div class="banner-content text-center text-white">
+            <h1 id="projeto-title">Detalhes do Projeto</h1>
+        </div>
+    </section>
+
+    <!-- Conteúdo do Projeto -->
+    <main id="project-content" class="container py-5">
+        <!-- O conteúdo será injetado aqui via JavaScript -->
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Informações de Contato -->
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p>Email: <a href="mailto:contato@cenografia.com" class="text-white">contato@cenografia.com</a></p>
+                    <p>Telefone: <a href="tel:+5511999999999" class="text-white">(11) 99999-9999</a></p>
+                </div>
+                <!-- Links Úteis -->
+                <div class="col-md-4">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html#home" class="text-white">Home</a></li>
+                        <li><a href="index.html#projetos" class="text-white">Projetos</a></li>
+                        <li><a href="index.html#sobre" class="text-white">Sobre</a></li>
+                        <li><a href="index.html#contato" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <!-- Redes Sociais -->
+                <div class="col-md-4">
+                    <h5>Siga-nos</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <p class="text-center mb-0">&copy; 2024 Empresa de Cenografia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Detalhes do Projeto -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="projectModalLabel" class="modal-title">Detalhes do Projeto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modalCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" id="modalCarouselInner">
+                            <!-- Imagens serão injetadas aqui -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                    <div class="mt-4" id="modalDescription">
+                        <!-- Descrição será injetada aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS e Dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts Personalizados -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
